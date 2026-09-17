@@ -13,5 +13,6 @@ public interface IBookService
     IEnumerable<Book> SearchBooksByAuthor(string author);
     IEnumerable<Book> SearchBooksByPublisher(string publisher);
     void DeleteBook(string isbn);
+    void UpdateBook(Book book);
     void BulkLoad(string filePath);
 }
